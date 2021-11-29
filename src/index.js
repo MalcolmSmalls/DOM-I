@@ -40,3 +40,27 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+
+const navLinks = document.querySelectorAll('nav a');
+const servicesLink = navLinks[0];
+const productLink = navLinks[1];
+const visionLink = navLinks[2];
+const featuresLink = navLinks[3];
+const aboutLink = navLinks[4];
+const contactLink = navLinks[5];
+const ctaSection = document.querySelector('.cta')
+const ctaText = ctaSection.querySelector("h1")
+const ctaButton = ctaSection.querySelector("button")
+const featuresTitle = document.querySelector('h4:nth-of-type(1)')
+
+
+servicesLink.textContent = siteContent['nav']['nav-item-1'];
+productLink.textContent = siteContent['nav']['nav-item-2'];
+visionLink.textContent = siteContent['nav']['nav-item-3'];
+featuresLink.textContent = siteContent['nav']['nav-item-4'];
+aboutLink.textContent = siteContent['nav']['nav-item-5'];
+contactLink.textContent = siteContent['nav']['nav-item-6'];
+ctaText.textContent = siteContent['cta']['h1']
+ctaButton.textContent = siteContent['cta']['button']
+featuresTitle.textContent = siteContent['main-content']['features-h4']
