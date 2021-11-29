@@ -1,3 +1,4 @@
+
 const siteContent = { // DO NOT CHANGE THIS OBJECT
   "nav": {
     "nav-item-1": "Services",
@@ -40,3 +41,37 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+
+const navLinks = document.querySelectorAll('nav a');
+const servicesLink = navLinks[0];
+const productLink = navLinks[1];
+const visionLink = navLinks[2];
+const featuresLink = navLinks[3];
+const aboutLink = navLinks[4];
+const contactLink = navLinks[5];
+const ctaSection = document.querySelector('.cta')
+const ctaText = ctaSection.querySelector("h1")
+const ctaButton = ctaSection.querySelector("button")
+const featuresTitle = document.querySelector('h4:nth-of-type(1)')
+const titlesList = document.querySelectorAll('h4')
+const aboutTitle = titlesList[1];
+const bottomContent = document.querySelector('.bottom-content');
+const servicesTitle = bottomContent.querySelector('h4:nth-of-type(1)');
+const productTitle = titlesList[3]
+const visionTitle = titlesList[4]
+console.log(productTitle)
+
+servicesLink.textContent = siteContent['nav']['nav-item-1'];
+productLink.textContent = siteContent['nav']['nav-item-2'];
+visionLink.textContent = siteContent['nav']['nav-item-3'];
+featuresLink.textContent = siteContent['nav']['nav-item-4'];
+aboutLink.textContent = siteContent['nav']['nav-item-5'];
+contactLink.textContent = siteContent['nav']['nav-item-6'];
+ctaText.textContent = siteContent['cta']['h1']
+ctaButton.textContent = siteContent['cta']['button']
+featuresTitle.textContent = siteContent['main-content']['features-h4']
+aboutTitle.textContent = siteContent['main-content']['about-h4']
+servicesTitle.textContent = siteContent['main-content']['services-h4']
+productTitle.textContent = siteContent['main-content']['product-h4'];
+visionTitle.textContent = siteContent['main-content']['vision-h4'];
